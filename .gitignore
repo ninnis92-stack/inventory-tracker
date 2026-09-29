@@ -1,0 +1,16 @@
+# Local inventory data (may contain personal or test information)
+inventory.json
+
+# Python cache and local tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/
+
