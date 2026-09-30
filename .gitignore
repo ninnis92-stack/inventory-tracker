@@ -1,5 +1,9 @@
-# Local inventory data (may contain personal or test information)
-inventory.json
+# Local data files (never commit generated inventory/test data)
+*.csv
+*.json
+test.csv
+test.json
+inventory*.csv
 
 # Python cache and local tooling
 __pycache__/
@@ -13,4 +17,3 @@ env/
 .DS_Store
 .idea/
 .vscode/
-

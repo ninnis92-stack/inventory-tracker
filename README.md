@@ -1,6 +1,6 @@
 # Inventory Item Tracker
 
-A beginner-friendly command-line inventory tracker written in Python. It supports adding, viewing, updating, retrieving, and deleting inventory items, with local JSON persistence.
+A beginner-friendly command-line inventory tracker written in Python. It supports adding, viewing, updating, retrieving, and deleting inventory items, with local JSON or CSV persistence.
 
 ## Features
 
@@ -11,6 +11,8 @@ A beginner-friendly command-line inventory tracker written in Python. It support
 - Delete an item by ID
 - Automatically assign the next available item ID
 - Save inventory locally in `inventory.json`
+- Create and switch between multiple JSON or CSV inventory files
+- Track both sale price and item cost
 
 ## Requirements
 
@@ -22,15 +24,16 @@ A beginner-friendly command-line inventory tracker written in Python. It support
 python inventory_tracker.py
 ```
 
-The first time the program saves an item, it creates `inventory.json` in the project directory. That file is intentionally ignored by Git because it contains local inventory data.
+The program lets you load an existing JSON or CSV file, or create a new one. Inventory data files are intentionally ignored by Git because they contain local inventory data.
 
 ## Project layout
 
 ```text
 inventory_tracker.py  # Application source
-inventory.json        # Local data file created at runtime (not committed)
+inventory*.json       # Local data files created at runtime (not committed)
+inventory*.csv        # Local data files created at runtime (not committed)
 ```
 
 ## Learning context
 
-This is a first project focused on Python functions, lists of dictionaries, loops, JSON persistence, input validation, and a menu-driven CLI.
+This is a first project focused on Python functions, lists of dictionaries, loops, JSON/CSV persistence, input validation, and a menu-driven CLI.
